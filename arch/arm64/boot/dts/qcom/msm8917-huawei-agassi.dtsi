@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Huawei AGS-L09 (Huawei MediaPad T3 10) device tree source
+ *
+ * Copyright (c) 2024, Hardronix. All rights reserved.
+ */
+
+/dts-v1/;
+#include "msm8917.dtsi"
+
+/ {
+	model = "Huawei Technologies, Inc. AGS-L09";
+	compatible = "qcom,msm8917-qrd-sku5", "qcom,msm8917-qrd", "qcom,msm8917", "qcom,qrd";
+	qcom,board-id = <8024 0>;
+};

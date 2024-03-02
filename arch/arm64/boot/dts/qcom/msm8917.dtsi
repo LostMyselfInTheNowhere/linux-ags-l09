@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * MSM8917 (Qualcomm Snapdragon 425) SoC device tree source
+ *
+ * Copyright (c) 2024, Hardronix. All rights reserved.
+ */
+
+/ {
+	#address-cells = <2>;
+	#size-cells = <2>;
+
+	model = "Qualcomm Technologies, Inc. MSM8917";
+	compatible = "qcom,msm8917";
+	qcom,msm-id = <303 0x0>, <308 0x0>, <309 0x0>;
+
+	chosen { };
+
+	memory {
+		device_type = "memory";
+		reg = <0 0 0 0>;
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+	};
+};
